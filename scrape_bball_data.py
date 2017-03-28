@@ -87,7 +87,6 @@ def aggregate_player_keys(players):
 
     for player in list(players.index):
         player_name = players.loc[player]['Name']
-        # print player_name
         temp_name = player_name.split(" ")
         player_stringKey = str.lower(temp_name[0][0]) + '/' + str.lower(temp_name[1][:5]) + str.lower(
             temp_name[0][:2]) + '01'
